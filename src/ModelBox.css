@@ -1,0 +1,32 @@
+.Model
+{
+   
+    width:40%;
+    height: 20%;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left:30%;
+    margin-top: 20%;
+
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+
+    background-color:aqua;
+    position: absolute;
+}
+.confirm{
+    margin:5%;
+    border-radius: 30px;
+    padding: 6px;
+    background-color:rosybrown;
+}
+.xButton{
+    background-color: whitesmoke;
+    color: black;
+}
+.overlay{
+    background-color: whitesmoke;
+    color: black;
+
+}

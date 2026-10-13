@@ -1,0 +1,536 @@
+/* Admission.css - Muthayammal Engineering College Admission Page */
+
+.mec-page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ================= HEADER SECTION ================= */
+.mec-header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.mec-header-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.mec-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mec-logo-img {
+  height: 64px;
+  max-width: 440px;
+  object-fit: contain;
+}
+
+.mec-header-right {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.mec-admission-contact {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mec-admission-contact-title {
+  color: #a73508;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.mec-admission-contact-numbers {
+  color: #222163;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 3px;
+  letter-spacing: 0.3px;
+}
+
+.mec-admission-contact-numbers a {
+  color: #222163;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.mec-admission-contact-numbers a:hover {
+  color: #a73508;
+}
+
+.mec-tnea-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mec-tnea-label-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  line-height: 1.15;
+  border-right: 2px solid #222163;
+  padding-right: 12px;
+}
+
+.mec-tnea-label {
+  color: #222163;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mec-tnea-code {
+  color: #a73508;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+/* ================= HERO SECTION ================= */
+.mec-hero-section {
+  width: 100%;
+  position: relative;
+  min-height: calc(100vh - 88px);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 40px 0 60px 0;
+}
+
+.mec-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(27, 40, 64, 0.45) 0%,
+    rgba(34, 33, 99, 0.25) 45%,
+    rgba(24, 23, 67, 0.5) 100%
+  );
+  pointer-events: none;
+}
+
+.mec-hero-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.mec-hero-left {
+  flex: 1;
+  padding-top: 80px;
+  padding-left: 20px;
+}
+
+.mec-hero-tagline {
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 1.15;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.45);
+}
+
+.mec-hero-tagline span {
+  display: block;
+}
+
+/* ================= FORM CARD ================= */
+.mec-form-card-wrapper {
+  width: 100%;
+  max-width: 530px;
+}
+
+.mec-form-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 24px 28px 28px 28px;
+  position: relative;
+}
+
+.mec-form-title {
+  text-align: center;
+  color: #31339c;
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+/* Turnstile Verification Badge */
+.mec-turnstile-box {
+  background-color: #222222;
+  border-radius: 4px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  user-select: none;
+}
+
+.mec-turnstile-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mec-turnstile-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #10b981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.4);
+}
+
+.mec-turnstile-text {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.mec-turnstile-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.mec-cloudflare-brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mec-cloudflare-logo-icon {
+  width: 24px;
+  height: 15px;
+}
+
+.mec-cloudflare-name {
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.mec-cloudflare-subtext {
+  color: #9ca3af;
+  font-size: 8px;
+  margin-top: 1px;
+}
+
+.mec-cloudflare-subtext a {
+  color: #9ca3af;
+  text-decoration: underline;
+}
+
+/* Form Grid */
+.mec-form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mec-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.mec-form-row.full-width {
+  grid-template-columns: 1fr;
+}
+
+.mec-form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.mec-form-group label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #212529;
+  margin-bottom: 3px;
+  display: block;
+}
+
+.mec-input,
+.mec-select {
+  width: 100%;
+  height: 33px;
+  padding: 5px 9px;
+  font-size: 12.5px;
+  font-family: inherit;
+  color: #495057;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 2px;
+  outline: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.mec-input::placeholder {
+  color: #757575;
+  font-size: 12px;
+  opacity: 1;
+}
+
+.mec-input:focus,
+.mec-select:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.25);
+}
+
+.mec-select {
+  cursor: pointer;
+  appearance: auto;
+  -webkit-appearance: auto;
+}
+
+/* Submit Row */
+.mec-submit-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.mec-btn-apply {
+  background-color: #7ba219;
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 36px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+  box-shadow: 0 2px 6px rgba(123, 162, 25, 0.35);
+}
+
+.mec-btn-apply:hover {
+  background-color: #6d9114;
+  box-shadow: 0 3px 10px rgba(109, 145, 20, 0.45);
+}
+
+.mec-btn-apply:active {
+  transform: translateY(1px);
+}
+
+/* Success Modal Notification */
+.mec-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.mec-modal-content {
+  background: #ffffff;
+  max-width: 480px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  animation: mecModalPop 0.25s ease-out;
+}
+
+@keyframes mecModalPop {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.mec-modal-icon {
+  width: 56px;
+  height: 56px;
+  background-color: #d1fae5;
+  color: #059669;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 16px auto;
+}
+
+.mec-modal-title {
+  color: #222163;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.mec-modal-text {
+  color: #4b5563;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.mec-modal-details {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 13px;
+  color: #334155;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.mec-modal-close-btn {
+  background-color: #222163;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.mec-modal-close-btn:hover {
+  background-color: #1a194d;
+}
+
+/* Form validation alert message */
+.mec-alert-msg {
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 11.5px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 1024px) {
+  .mec-hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mec-hero-left {
+    padding-top: 10px;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .mec-hero-tagline {
+    font-size: 42px;
+  }
+
+  .mec-form-card-wrapper {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mec-header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .mec-header-right {
+    gap: 20px;
+  }
+
+  .mec-hero-tagline {
+    font-size: 34px;
+  }
+
+  .mec-form-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .mec-form-card {
+    padding: 20px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mec-header-right {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .mec-admission-contact {
+    text-align: center;
+  }
+
+  .mec-hero-tagline {
+    font-size: 28px;
+  }
+
+  .mec-turnstile-box {
+    padding: 8px 10px;
+  }
+}
